@@ -1,86 +1,52 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
     color:#e8e8e8;
+	
 }
 
-ul {
-	list-style: none;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
+body{
+	background-image: url(../Img/audi-r8gt-03.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-height: 100%;
 }
 
 .cabecalho {
-	height: 80px;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 80px;
-    top: 0%;
+	padding: 20px 80px;
 }
 
-.cabecalho .logo {
-	display: flex;
-	gap: 15px;
-    max-width: 50px;
+.logo > img {
+    max-width: 200px;
+	height: auto;
 }
 
 .cabecalho .menu {
-	display: flex;
-	gap: 30px;
+    align-items: center;
+    gap: 30px;
 }
 
-.cabecalho .menu li a {
-	padding: 30px;
-	color: #e8e8e8;
-	font-weight: bolder;
-	font-size: 15px;
-	font-family: "Chalet";
-}
 
-.imagem-fundo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.home {
-    position: relative;
-    min-height: 100vh;
+.cabecalho .menu ul {
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    margin-left: 110%;
+}
+
+.cabecalho .menu li {
+    margin-left: 54px;
+}
+
+
+.home {
+    max-height: 100%;
+    display: flex; 
 }
 
 .home .informacoes {
     z-index: 1;
-    padding: 80px 80px 80px 170px;
-    max-width: 780px;
-}
-
-.home .imagem-fundo {
-	width: 100%;
-	object-fit: cover;
-}
-
-.home .informacoes {
-	position: absolute;
-	z-index: 1;
-	min-height: calc(100vh - 80px);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 32px;
-    
+    padding: 20px 80px;
+    max-width: 700px;
+    margin-top: 23%;
 }
 
 footer {
@@ -89,9 +55,4 @@ footer {
     text-align: center;
     bottom: 10px;
     width: 100%;
-}
-
-footer p {
-    color: white;
-    margin: 0;
 }
