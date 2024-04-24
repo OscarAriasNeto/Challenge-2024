@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    color:#e8e8e8;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.cabecalho {
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 80px;
+    top: 0%;
+}
+
+.cabecalho .logo {
+	display: flex;
+	gap: 15px;
+    max-width: 50px;
+}
+
+.cabecalho .menu {
+	display: flex;
+	gap: 30px;
+}
+
+.cabecalho .menu li a {
+	padding: 30px;
+	color: #e8e8e8;
+	font-weight: bolder;
+	font-size: 15px;
+	font-family: "Chalet";
+}
+
+.imagem-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home .informacoes {
+    z-index: 1;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home .imagem-fundo {
+	width: 100%;
+	object-fit: cover;
+}
+
+.home .informacoes {
+	position: absolute;
+	z-index: 1;
+	min-height: calc(100vh - 80px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+    
+}
+
+footer {
+    position: fixed;
+    padding: 20px;
+    text-align: center;
+    bottom: 10px;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
