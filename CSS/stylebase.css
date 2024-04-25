@@ -22,19 +22,19 @@ body{
 
 .cabecalho .menu {
     align-items: center;
-    gap: 30px;
+    gap: 500px;
 }
 
 
 .cabecalho .menu ul {
     display: flex;
     justify-content: center;
-    margin-left: 110%;
+    margin-left: 180px;
     font-weight: bold;
 }
 
 .cabecalho .menu li {
-    margin-left: 54px;
+    margin-left: 46px;
 }
 
 
