@@ -37,6 +37,9 @@ body{
     margin-left: 46px;
 }
 
+.home-nav {
+    color: #00A1FC;
+}
 
 .home {
     max-height: 100%;

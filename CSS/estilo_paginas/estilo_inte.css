@@ -1,0 +1,89 @@
+* {
+    font-family: "inter";
+}
+
+body {
+    background-color: #f7f7f7;
+}
+.cabecalho {
+    display: flex;
+    padding: 5px 80px;
+    background-color: #fff; 
+}
+
+.logo > img {
+    max-width: 200px;
+    height: auto;
+}
+
+.cabecalho .menu {
+    align-items: center;
+    gap: 500px;
+}
+
+.cabecalho .menu ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 180px;
+    font-weight: bold;
+}
+
+.cabecalho .menu li {
+    margin-left: 46px;
+}
+
+.intgrantes-nav {
+    color: #00A1FC;
+}
+
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.Lucas p {
+    margin-top: 20px;
+    margin-left: 220px;
+}
+
+.Lucas > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    margin-left: 200px;
+}
+
+.Oscar p {
+    margin-top: 20px;
+    margin-left: 165px;
+}
+
+.Oscar > img {
+    width: 250px;
+    max-height: 250px;
+    border-radius: 200px;
+    margin-left: 100px;
+}
+
+.Nicolas p {
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.Nicolas > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+}
+
+footer {
+    position: fixed;
+    padding: 20px;
+    text-align: center;
+    bottom: 10px;
+    width: 100%;
+}
