@@ -52,6 +52,7 @@ body{
     max-width: 700px;
     margin-top: 18%;
     font-size: 16px;
+    text-shadow: 0.1em 0.1em 0.2em black    
 }
 
 .home .informacoes h1{

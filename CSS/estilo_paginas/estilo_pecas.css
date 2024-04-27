@@ -13,7 +13,7 @@ body {
 }
 
 .logo > img {
-    max-width: 200px;
+    max-width: 168px;
 	height: auto;
 }
 
@@ -22,8 +22,7 @@ body {
     gap: 500px;
 }
 
-
-.cabecalho .menu ul {
+e.cabecalho .menu ul {
     display: flex;
     justify-content: center;
     margin-left: 180px;
