@@ -4,23 +4,33 @@
 }
 
 body{
-	background-image: url(../Img/audi-r8gt-03.webp);
+    background-image: url(../Img/Roteiro-Estados-Unidos-Rota-66-–-Oeste.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	max-height: 100%;
+    
 }
 
-.cabecalho {
-	display: flex;
-	padding: 20px 80px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 
 .logo > img {
+    margin-left: 90px;
     max-width: 200px;
 	height: auto;
 }
 
 .cabecalho .menu {
+    
     align-items: center;
     gap: 500px;
 }
@@ -29,12 +39,17 @@ body{
 .cabecalho .menu ul {
     display: flex;
     justify-content: center;
-    margin-left: 180px;
+    margin-right: 400px;
     font-weight: bold;
 }
 
 .cabecalho .menu li {
     margin-left: 46px;
+    color: black;
+}
+
+.menu :hover {
+    color: #00A1FC;
 }
 
 .home-nav {
@@ -42,28 +57,37 @@ body{
 }
 
 .home {
-    max-height: 100%;
+    background-color: #0007225b;
+    height: 100%;
+    max-width: 100%;
     display: flex; 
 }
 
-.home .informacoes {
-    z-index: 1;
-    padding: 20px 80px;
-    max-width: 700px;
-    margin-top: 18%;
-    font-size: 16px;
-    text-shadow: 0.1em 0.1em 0.2em black    
+.info-section {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+#card2 ,#card3 {
+   margin-left: 70px;
+}
+
+.info-card {
+    background-color: #70c6f8;
+    box-shadow: -10px 10px #00A1FC;
+    text-align: center;
+    position: relative;
+    height: 480px;
+    width: 300px;
+    border-radius: 40px;
+    padding: 20px;
 }
 
 .home .informacoes h1{
     font-weight: bold;
     font-size: 64px;
-}
-
-footer {
-    position: fixed;
-    padding: 20px;
-    text-align: center;
-    bottom: 10px;
-    width: 100%;
 }
