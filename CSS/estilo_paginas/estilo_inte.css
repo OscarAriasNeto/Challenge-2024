@@ -12,24 +12,28 @@ body {
 }
 
 .logo > img {
-    max-width: 168px;
+    margin-left: 6.5vw;
+    max-width: 30vh;
 	height: auto;
 }
 
 .cabecalho .menu {
+    
     align-items: center;
-    gap: 500px;
+    gap: 76vh 36vw;
 }
+
 
 .cabecalho .menu ul {
     display: flex;
     justify-content: center;
-    margin-left: 180px;
+    margin-right: 29vw;
     font-weight: bold;
 }
 
 .cabecalho .menu li {
-    margin-left: 46px;
+    margin-left: 3.3vw;
+    color: black;
 }
 
 .intgrantes-nav {
@@ -39,51 +43,44 @@ body {
 .informacoes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
+    grid-gap: 0.6944vw;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 13.8889vh;
 }
 
 .Lucas p {
-    margin-top: 20px;
-    margin-left: 220px;
+    margin-top: 1.3889vh;
+    margin-left: 13.8889vw;
 }
 
 .Lucas > img {
-    width: 250px;
-    height: 250px;
-    border-radius: 200px;
-    margin-left: 200px;
+    width: 17.3611vw;
+    height: 17.3611vw;
+    border-radius: 12.5vw;
+    margin-left: 12.5vw;
 }
 
 .Oscar p {
-    margin-top: 20px;
-    margin-left: 165px;
+    margin-top: 1.3889vh;
+    margin-left: 10.4167vw;
 }
 
 .Oscar > img {
-    width: 250px;
-    max-height: 250px;
-    border-radius: 200px;
-    margin-left: 100px;
+    width: 17.3611vw;
+    max-height: 17.3611vw;
+    border-radius: 12.5vw;
+    margin-left: 6.9444vw;
 }
 
 .Nicolas p {
-    margin-top: 20px;
-    margin-left: 32px;
+    margin-top: 1.3889vh;
+    margin-left: 2.2222vw;
 }
 
 .Nicolas > img {
-    width: 250px;
-    height: 250px;
-    border-radius: 200px;
+    width: 17.3611vw;
+    height: 17.3611vw;
+    border-radius: 12.5vw;
 }
 
-footer {
-    position: fixed;
-    padding: 20px;
-    text-align: center;
-    bottom: 10px;
-    width: 100%;
-}

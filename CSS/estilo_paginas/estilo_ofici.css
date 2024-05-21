@@ -6,32 +6,40 @@ body {
     background-color: #f7f7f7;
 }
 
-.cabecalho {
+header {
     display: flex;
-    padding: 5px 80px;
-    background-color: #fff; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vh 1.4vw;
+    background-color: #fff;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 
 .logo > img {
-    max-width: 168px;
+    margin-left: 6.5vw;
+    max-width: 30vh;
 	height: auto;
 }
 
 .cabecalho .menu {
+    
     align-items: center;
-
+    gap: 76vh 36vw;
 }
 
 
 .cabecalho .menu ul {
     display: flex;
     justify-content: center;
-    margin-left: 180px;
+    margin-right: 29vw;
     font-weight: bold;
 }
 
 .cabecalho .menu li {
-    margin-left: 46px;
+    margin-left: 3.3vw;
+    color: black;
 }
 
 .oficina-nav {
@@ -43,50 +51,39 @@ body {
 }
 
 .home > img{
-    margin-top: 20px;
-    max-width: 954px;
-    height: 436px;
+    margin-top: 1.3889vh;
+    max-width: 59.625vw;
+    height: 25.1111vh;
 }
 
 .maps {
-    
-    margin-left: 150px;
+    margin-left: 9.7222vw;
 }
 
 .informacoes   {
-    margin-left: -775px;
-    margin-top: 460px;
+    margin-left: -51.3889vw;
+    margin-top: 51.1111vh;
 }
 
 .top-box {
     background-color: gray;
-    width: 1050px;
-    height: 50px;
-    border-radius: 20px;
+    width: 65.9722vw;
+    height: 2.7778vh;
+    border-radius: 1.3889vw;
     align-content: center;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 150px;
+    margin-top: 1.3889vh;
+    margin-left: 9.7222vw;
 }
 
 .right-box {
     position: fixed;
     background-color: gray;
-    width: 219px;
-    height: 500px;
+    width: 14.5833vw;
+    height: 55.5556vh;
     text-align: center;
-    border-radius: 10px;
-    right: 310px;
-    top: 140px;
-}
-
-
-
-footer {
-    position: fixed;
-    padding: 20px;
-    text-align: center;
-    bottom: 10px;
-    width: 100%;
+    border-radius: 0.6944vw;
+    right: 19.4444vw;
+    top: 15.5556vh;
 }
 

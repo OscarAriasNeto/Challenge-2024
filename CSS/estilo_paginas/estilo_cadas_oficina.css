@@ -6,32 +6,40 @@ body {
     background-color: #f7f7f7;
 }
 
-.cabecalho {
+header {
     display: flex;
-    padding: 5px 80px;
-    background-color: #fff; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vh 1.4vw;
+    background-color: #fff;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 
 .logo > img {
-    max-width: 168px;
+    margin-left: 6.5vw;
+    max-width: 30vh;
 	height: auto;
 }
 
 .cabecalho .menu {
+    
     align-items: center;
-    gap: 500px;
+    gap: 76vh 36vw;
 }
 
 
 .cabecalho .menu ul {
     display: flex;
     justify-content: center;
-    margin-left: 180px;
+    margin-right: 29vw;
     font-weight: bold;
 }
 
 .cabecalho .menu li {
-    margin-left: 46px;
+    margin-left: 3.3vw;
+    color: black;
 }
 
 .cadas-oficina-nav {
@@ -40,8 +48,9 @@ body {
 
 .informacoes {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.3889vh;
 }
+
 .form {
     display: flex;
     justify-content: space-around;
@@ -49,7 +58,7 @@ body {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 1.3889vh;
 }
 
 .container {
@@ -60,39 +69,32 @@ body {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.6944vh;
     font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"] {
-    width: 583px; 
-    padding: 10px; 
-    border: 1px solid black; 
-    border-radius: 5px;
-    font-size: 16px; 
-    color: #333; 
+    width: 36.3889vw;
+    padding: 1.3889vh;
+    border: 0.0694vw solid black;
+    border-radius: 0.3472vw;
+    font-size: 1.1111vw;
+    color: #333;
     box-sizing: border-box;
 }
+
 input[type="submit"] {
-    padding: 10px 20px;
+    padding: 1.3889vh 2.7778vw;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 0.3472vw;
+    font-size: 1.1111vw;
     cursor: pointer;
-    border-left: 100px;
+    border-left: 6.9444vw;
 }
 
 input[type="submit"]:hover {
     background-color: #0056b3;
-}
-
-footer {
-    position: fixed;
-    padding: 20px;
-    text-align: center;
-    bottom: 10px;
-    width: 100%;
 }

@@ -1,5 +1,4 @@
 * {
-    color:#e8e8e8;
 	font-family: "inter";
 }
 
@@ -8,43 +7,46 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	max-height: 100%;
-    
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1.5vh 1.4vw;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
 }
 
+main {
+    background-color: rgba(0, 0, 0, 0.63);
+    height: 89.6vh;
+}
+
 .logo > img {
-    margin-left: 90px;
-    max-width: 200px;
+    margin-left: 6.5vw;
+    max-width: 30vh;
 	height: auto;
 }
 
 .cabecalho .menu {
     
     align-items: center;
-    gap: 500px;
+    gap: 76vh 36vw;
 }
 
 
 .cabecalho .menu ul {
     display: flex;
     justify-content: center;
-    margin-right: 400px;
+    margin-right: 29vw;
     font-weight: bold;
 }
 
 .cabecalho .menu li {
-    margin-left: 46px;
+    margin-left: 3.3vw;
     color: black;
 }
 
@@ -56,32 +58,31 @@ header {
     color: #00A1FC;
 }
 
+
 .home {
-    background-color: #0007225b;
-    height: 100%;
+    max-height: 100vh;
     max-width: 100%;
     display: flex; 
 }
 
 .info-section {
-    color: black;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin-top: 80px;
-    margin-left: 200px;
+    margin-top: 12vh;
+    margin-left: 7.5%;
 }
 
 #card2 ,#card3 {
-   margin-left: 70px;
+   margin-left: 5.1vw;
 }
 
 .info-card {
     background-color: #70c6f8;
-    box-shadow: -10px 10px #00A1FC;
+    box-shadow: -1.5vh 0.7vw #00A1FC;
     text-align: center;
     position: relative;
-    height: 480px;
+    height: 63vh;
     width: 300px;
     border-radius: 40px;
     padding: 20px;
