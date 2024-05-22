@@ -1,15 +1,15 @@
 * {
-	font-family: "inter";
-}
-
-body{
+    font-family: "inter";
+  }
+  
+  body {
     background-image: url(../Img/Roteiro-Estados-Unidos-Rota-66-–-Oeste.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	max-height: 100%;
-}
-
-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 100%;
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,77 +18,93 @@ header {
     border-radius: 15px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-}
-
-main {
+  }
+  
+  main {
     background-color: rgba(0, 0, 0, 0.63);
     height: 89.6vh;
-}
-
-.logo > img {
+  }
+  
+  .logo > img {
     margin-left: 6.5vw;
     max-width: 30vh;
-	height: auto;
-}
-
-.cabecalho .menu {
-    
+    height: auto;
+  }
+  
+  .cabecalho .menu {
     align-items: center;
     gap: 76vh 36vw;
-}
-
-
-.cabecalho .menu ul {
+  }
+  
+  .cabecalho .menu ul {
     display: flex;
     justify-content: center;
     margin-right: 29vw;
     font-weight: bold;
-}
-
-.cabecalho .menu li {
+  }
+  
+  .cabecalho .menu li {
     margin-left: 3.3vw;
     color: black;
-}
-
-.menu :hover {
+  }
+  
+  .menu:hover {
     color: #00A1FC;
-}
-
-.home-nav {
+  }
+  
+  .home-nav {
     color: #00A1FC;
-}
-
-
-.home {
+  }
+  
+  .home {
     max-height: 100vh;
     max-width: 100%;
-    display: flex; 
-}
-
-.info-section {
     display: flex;
-    justify-content: space-around;
+  }
+  
+  .info-section {
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
     margin-top: 12vh;
     margin-left: 7.5%;
-}
-
-#card2 ,#card3 {
-   margin-left: 5.1vw;
-}
-
-.info-card {
+  }
+  
+  .info-card {
     background-color: #70c6f8;
     box-shadow: -1.5vh 0.7vw #00A1FC;
     text-align: center;
     position: relative;
     height: 63vh;
-    width: 300px;
+    width: 280px;
     border-radius: 40px;
     padding: 20px;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  #card1 > img,
+  #card2 > img.carro2,
+  #card3 > img {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
 
-.home .informacoes h1{
-    font-weight: bold;
-    font-size: 64px;
+  #card2,
+#card3 {
+
+  margin-left: 7.5vw;
 }
+  
+  .info-card p {
+    text-align: justify;
+  }
