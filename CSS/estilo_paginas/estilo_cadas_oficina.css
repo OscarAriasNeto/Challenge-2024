@@ -20,15 +20,13 @@ header {
 .logo > img {
     margin-left: 6.5vw;
     max-width: 30vh;
-	height: auto;
+    height: auto;
 }
 
 .cabecalho .menu {
-    
     align-items: center;
     gap: 76vh 36vw;
 }
-
 
 .cabecalho .menu ul {
     display: flex;
@@ -97,4 +95,15 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+#mensagem-sucesso {
+    display: none; /* Inicialmente oculto */
+    padding: 10px 20px;
+    background-color: #00A1FC; /* Cor de fundo azul */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px; /* Ajuste a margem superior conforme desejado */
 }

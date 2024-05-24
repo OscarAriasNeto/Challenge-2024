@@ -16,7 +16,7 @@
         <div class="menu">
         <nav>
             <ul>
-                <li><a class="home-nav"href="../index.html">Home</a></li>
+                <li><a class="home-nav" href="../index.html">Home</a></li>
                 <li><a class="diag-nav" href="./diagnosticos.html">Diagnosticos</a></li>
                 <li><a class="oficina-nav" href="./oficinas.html">Oficinas</a></li>
                 <li><a class="cadas-oficina-nav" href="./cadas-oficina.html">Cadastro</a></li>
@@ -28,17 +28,18 @@
     
     <main>
         <div class="home">
-        <section class="informacoes">
-            <h1>Cadastre também a sua oficina</h1>
-        </section>
+            <section class="informacoes">
+                <h1>Cadastre também a sua oficina</h1>
+                <div id="mensagem-sucesso" class="mensagem-sucesso"></div> <!-- Mensagem de sucesso aqui -->
+            </section>
         </div> 
         <div class="container">
-            <form class="formulario" action="#" method="post">
+            <form class="formulario" onsubmit="handleFormSubmit(event)">
                 <div class="form-group">
                     <label for="nome-oficina">Nome da Oficina</label>
                     <input type="text" id="nome-oficina">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="cnpj">CNPJ</label>
                     <input type="text" id="cnpj">
                 </div>
@@ -58,10 +59,10 @@
                     <label for="endereco">Endereço</label>
                     <input type="text" id="endereco">
                 </div>
-
                 <input type="submit" value="Enviar">
             </form>
         </div>
     </main>
+    <script src="../JS/cadastro.js"></script>
 </body>
 </html>

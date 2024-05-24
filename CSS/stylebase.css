@@ -1,110 +1,209 @@
 * {
-    font-family: "inter";
-  }
-  
-  body {
-    background-image: url(../Img/Roteiro-Estados-Unidos-Rota-66-–-Oeste.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-height: 100%;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5vh 1.4vw;
-    background-color: #fff;
-    border-radius: 15px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-  
-  main {
-    background-color: rgba(0, 0, 0, 0.63);
-    height: 89.6vh;
-  }
-  
-  .logo > img {
-    margin-left: 6.5vw;
-    max-width: 30vh;
-    height: auto;
-  }
-  
-  .cabecalho .menu {
-    align-items: center;
-    gap: 76vh 36vw;
-  }
-  
-  .cabecalho .menu ul {
-    display: flex;
-    justify-content: center;
-    margin-right: 29vw;
-    font-weight: bold;
-  }
-  
-  .cabecalho .menu li {
-    margin-left: 3.3vw;
-    color: black;
-  }
-  
-  .menu:hover {
-    color: #00A1FC;
-  }
-  
-  .home-nav {
-    color: #00A1FC;
-  }
-  
-  .home {
-    max-height: 100vh;
-    max-width: 100%;
-    display: flex;
-  }
-  
-  .info-section {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 12vh;
-    margin-left: 7.5%;
-  }
-  
-  .info-card {
-    background-color: #70c6f8;
-    box-shadow: -1.5vh 0.7vw #00A1FC;
-    text-align: center;
-    position: relative;
-    height: 63vh;
-    width: 280px;
-    border-radius: 40px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  h2 {
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  
-  #card1 > img,
-  #card2 > img.carro2,
-  #card3 > img {
-    max-width: 250px;
-    height: auto;
-    margin-bottom: 20px;
-    margin-top: 30px;
-  }
-
-  #card2,
-#card3 {
-
-  margin-left: 7.5vw;
+  font-family: "inter";
 }
-  
-  .info-card p {
-    text-align: justify;
+
+body {
+  background-image: url(../Img/Roteiro-Estados-Unidos-Rota-66-–-Oeste.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5vh 1.4vw;
+  background-color: #fff;
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.63);
+  display: flex;
+  flex-direction: column;
+  height: 89.6vh;
+}
+
+.logo > img {
+  margin-left: 6.5vw;
+  max-width: 30vh;
+  height: auto;
+}
+
+.cabecalho .menu {
+  align-items: center;
+  display: flex;
+  gap: 76vh 36vw;
+}
+
+.cabecalho .menu ul {
+  display: flex;
+  justify-content: center;
+  margin-right: 29vw;
+  font-weight: bold;
+}
+
+.cabecalho .menu li {
+  margin-left: 3.3vw;
+  color: black;
+}
+
+.menu:hover {
+  color: #00A1FC;
+}
+
+.home-nav {
+  color: #00A1FC;
+}
+
+.home {
+  max-height: 100vh;
+  max-width: 100%;
+  display: flex;
+}
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 12vh;
+  margin-left: 7.5%;
+}
+
+.info-card {
+  background-color: #70c6f8;
+  box-shadow: -1.5vh 0.7vw #00A1FC;
+  text-align: center;
+  position: relative;
+  height: 63vh;
+  width: 280px;
+  border-radius: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#card1 > img,
+#card2 > img.carro2,
+#card3 > img {
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.info-card p {
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  .info-section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 0;
+      margin-top: 5vh;
   }
+
+  .info-card {
+      width: 45%;
+      margin: 10px;
+      height: auto;
+  }
+
+  .info-card img {
+      max-width: 80%;
+      height: auto;
+  }
+
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .cabecalho .menu ul {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+  }
+
+  .cabecalho .menu li {
+      margin: 10px 0;
+  }
+
+  .logo > img {
+      margin-left: 0;
+      max-width: 20vh;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-card {
+      width: 90%;
+      margin: 10px;
+  }
+
+  .info-card img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .logo img {
+      max-width: 50vw;
+  }
+
+  .cabecalho .menu {
+      gap: 20px 10px;
+  }
+
+  header {
+      padding: 1vh 1vw;
+  }
+
+  .cabecalho .menu ul {
+      margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info-section {
+      flex-direction: row;
+  }
+
+  .info-card {
+      width: 30%;
+      margin-left: 5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+      overflow-y: auto;
+  }
+}
+
+@media (max-width: 1320px) {
+  header {
+      overflow-y: auto;
+  }
+}
