@@ -4,6 +4,8 @@
 
 body {
     background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -20,15 +22,13 @@ header {
 .logo > img {
     margin-left: 6.5vw;
     max-width: 30vh;
-	height: auto;
+    height: auto;
 }
 
 .cabecalho .menu {
-    
     align-items: center;
     gap: 76vh 36vw;
 }
-
 
 .cabecalho .menu ul {
     display: flex;
@@ -46,23 +46,29 @@ header {
     color: #00A1FC;
 }
 
-.home{
+.home {
     display: flex;
+    margin-top: 2vh;
+    margin-left: 9.7222vw;
 }
 
-.home > img{
+.home > iframe {
     margin-top: 1.3889vh;
-    max-width: 59.625vw;
-    height: 25.1111vh;
+    width: 59.625vw;
+    height: 45.1111vh;
+    border: 0;
 }
 
 .maps {
     margin-left: 9.7222vw;
+    width: 59.625vw;
+    height: 45.1111vh;
 }
 
-.informacoes   {
-    margin-left: -51.3889vw;
-    margin-top: 51.1111vh;
+.informacoes {
+    margin-left: 10.3889vw;
+    margin-top: 10.1111vh;
+    width: 50%;
 }
 
 .top-box {
@@ -77,13 +83,78 @@ header {
 }
 
 .right-box {
-    position: fixed;
     background-color: gray;
     width: 14.5833vw;
     height: 55.5556vh;
     text-align: center;
     border-radius: 0.6944vw;
-    right: 19.4444vw;
-    top: 15.5556vh;
+    position: fixed;
+    right: 9.4444vw;
+    top: 20vh;
 }
 
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .home > iframe {
+        width: 90%;
+        height: auto;
+    }
+
+    .informacoes {
+        margin-left: 0;
+        margin-top: 2vh;
+        width: 90%;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho .menu ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cabecalho .menu li {
+        margin: 10px 0;
+    }
+
+    .logo > img {
+        margin-left: 0;
+        max-width: 20vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .home > iframe {
+        width: 100%;
+    }
+
+    .right-box {
+        width: 80%;
+        height: auto;
+        position: relative;
+        margin: 20px auto;
+    }
+
+    .cabecalho .menu {
+        gap: 20px 10px;
+    }
+
+    header {
+        padding: 1vh 1vw;
+    }
+
+    .cabecalho .menu ul {
+        margin-right: 0;
+    }
+}

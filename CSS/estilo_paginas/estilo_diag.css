@@ -4,6 +4,8 @@
 
 body {
     background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -20,15 +22,13 @@ header {
 .logo > img {
     margin-left: 6.5vw;
     max-width: 30vh;
-	height: auto;
+    height: auto;
 }
 
 .cabecalho .menu {
-    
     align-items: center;
     gap: 76vh 36vw;
 }
-
 
 .cabecalho .menu ul {
     display: flex;
@@ -49,22 +49,24 @@ header {
 .home {
     display: flex;
     align-items: center;
-    margin-left: 3.125vw;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 9.7222vw;
+}
+
+.conteiner {
+    margin-right: 6.25vw;
 }
 
 .home > img {
-    max-width: 12.5vw;
-}
-
-.conteiner{
-    margin-left: 6.25vw;
-    margin-right: 6.25vw;
-    margin-bottom: 12.5vh;
+    margin-top: -100px;
+    max-width: 15.5vw;
+    height: auto;
 }
 
 .informacoes {
-    margin-top: -16.67vh;
-    margin-left: 9.375vw;
+    margin-top: 10px;
+    margin-left: 10.3889vw;
     max-width: 25vw;
 }
 
@@ -78,7 +80,83 @@ header {
     margin-left: 12.5vw;
 }
 
-
-.chatbot p{
+.chatbot p {
     color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .conteiner {
+        margin: 20px 0;
+    }
+
+    .home > img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .informacoes {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .chatbot {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho .menu ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cabecalho .menu li {
+        margin: 10px 0;
+    }
+
+    .logo > img {
+        margin-left: 0;
+        max-width: 20vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .home > img {
+        max-width: 100%;
+    }
+
+    .informacoes {
+        width: 100%;
+    }
+
+    .chatbot {
+        width: 100%;
+    }
+
+    .cabecalho .menu {
+        gap: 20px 10px;
+    }
+
+    header {
+        padding: 1vh 1vw;
+    }
+
+    .cabecalho .menu ul {
+        margin-right: 0;
+    }
 }

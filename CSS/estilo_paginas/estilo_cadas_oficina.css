@@ -4,6 +4,8 @@
 
 body {
     background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -90,7 +92,6 @@ input[type="submit"] {
     border-radius: 0.3472vw;
     font-size: 1.1111vw;
     cursor: pointer;
-    border-left: 6.9444vw;
 }
 
 input[type="submit"]:hover {
@@ -106,4 +107,61 @@ input[type="submit"]:hover {
     text-align: center;
     border-radius: 5px;
     margin-top: 20px; /* Ajuste a margem superior conforme desejado */
+}
+
+@media (max-width: 1024px) {
+    .formulario {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho .menu ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cabecalho .menu li {
+        margin: 10px 0;
+    }
+
+    .logo > img {
+        margin-left: 0;
+        max-width: 20vh;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .cabecalho .menu {
+        gap: 20px 10px;
+    }
+
+    header {
+        padding: 1vh 1vw;
+    }
+
+    .cabecalho .menu ul {
+        margin-right: 0;
+    }
 }
