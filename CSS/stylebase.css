@@ -78,8 +78,8 @@ main {
   box-shadow: -1.5vh 0.7vw #00A1FC;
   text-align: center;
   position: relative;
-  height: 63vh;
-  width: 280px;
+  max-height: 85.5vh;
+  max-width: 13.29vw;
   border-radius: 40px;
   padding: 20px;
   display: flex;
@@ -89,13 +89,29 @@ main {
   margin: 20px;
 }
 
-h2 {
+
+.info-card > h2 {
   text-align: left;
-  margin-bottom: 10px;
 }
 
-#card1 > img,
-#card2 > img.carro2,
+#card1{
+  margin-left: 190px;
+  margin-right: 60px;
+}
+
+#card1 > img{
+  max-width: 450px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: -50px;
+}
+#card2 > img.carro2  {
+  max-width: 370px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
 #card3 > img {
   max-width: 250px;
   height: auto;
