@@ -1,0 +1,90 @@
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vh 1.4vw;
+    background-color: #fff;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .logo > img {
+    margin-left: 6.5vw;
+    max-width: 30vh;
+    height: auto;
+  }
+  
+  .cabecalho .menu {
+    align-items: center;
+    display: flex;
+    gap: 76vh 36vw;
+  }
+  
+  .cabecalho .menu ul {
+    display: flex;
+    justify-content: center;
+    margin-right: 29vw;
+    font-weight: bold;
+    font-size: 21px;
+  }
+  
+  .cabecalho .menu li {
+    margin-left: 3.3vw;
+    color: black;
+  }
+  
+  .menu:hover {
+    color: #00A1FC;
+  }
+  
+  .home-nav {
+    color: #00A1FC;
+  }
+
+  @media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .cabecalho .menu ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+  
+    .cabecalho .menu li {
+        margin: 10px 0;
+    }
+  
+    .logo > img {
+        margin-left: 0;
+        max-width: 20vh;
+    }
+  }
+
+  @media (max-width: 768px){
+    .logo img {
+        max-width: 50vw;
+    }
+  
+    .cabecalho .menu {
+        gap: 20px 10px;
+    }
+  
+    header {
+        padding: 1vh 1vw;
+    }
+  
+    .cabecalho .menu ul {
+        margin-right: 0;
+    }
+  } 
+  
+  @media (max-width: 1320px) {
+    header {
+        overflow-y: auto;
+    }
+  }

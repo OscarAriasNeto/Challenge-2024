@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.6944vw;
+    margin-top: 150px;
+}
+
+.Lucas p {
+    margin-top: 1.3889vh;
+    margin-left: 13.8889vw;
+}
+
+.Lucas > img {
+    width: 17.3611vw;
+    height: 17.3611vw;
+    border-radius: 12.5vw;
+    margin-left: 12.5vw;
+}
+
+.Oscar p {
+    margin-top: 1.3889vh;
+    margin-left: 10.4167vw;
+}
+
+.Oscar > img {
+    width: 17.3611vw;
+    max-height: 17.3611vw;
+    border-radius: 12.5vw;
+    margin-left: 6.9444vw;
+}
+
+.Nicolas p {
+    margin-top: 1.3889vh;
+    margin-left: 2.2222vw;
+}
+
+.Nicolas > img {
+    width: 17.3611vw;
+    height: 17.3611vw;
+    border-radius: 12.5vw;
+}

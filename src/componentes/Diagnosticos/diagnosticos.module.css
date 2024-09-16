@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f3f3f3;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+}
+
+.carImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.chatbot {
+    background-color: rgb(58, 167, 206);
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.chatbot p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .home {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .conteiner {
+        width: 50%;
+    }
+
+    .chatbot {
+        width: 35%;
+        height: 60vh;
+    }
+
+    .informacoes {
+        margin-top: 20px;
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 5vw;
+    }
+
+    .home {
+        flex-direction: row;
+        width: 60%;
+        margin: 0;
+    }
+
+    .conteiner {
+        width: 40%;
+    }
+
+    .chatbot {
+        width: 30%;
+        height: 60vh;
+        margin-left: 20px;
+    }
+
+    .informacoes {
+        max-width: 25vw;
+        margin: 0;
+        margin-left: 2vw;
+        position: relative;
+        margin-top: 0;
+    }
+}
