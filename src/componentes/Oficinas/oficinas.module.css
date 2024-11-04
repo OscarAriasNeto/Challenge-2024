@@ -28,11 +28,6 @@ main {
     margin-top: 1.5vh;
 }
 
-.informacoes {
-    margin-top: 2vh;
-    text-align: center;
-}
-
 .top_box {
     background-color: gray;
     width: 90%;
@@ -42,6 +37,40 @@ main {
     padding: 1vh;
     margin-top: 2vh;
 }
+
+.formulario {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color:  gray;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.formulario input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #e0e0e0;
+}
+
+.formulario button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+
 
 .right_box {
     background-color: gray;
