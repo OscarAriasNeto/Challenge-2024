@@ -2,11 +2,18 @@ import React, { useState } from 'react';
 import styles from './oficinas.module.css';
 
 const Oficinas = () => {
+    type InfoOficinaType = {
+        placa: string;
+        ano: string;
+        modelo: string;
+        motorizacao: string;
+        servico: string;
+    }
 
     const [placa, setPlaca] = useState('');
-    const [infoOficina, setInfoOficina] = useState(null);
+    const [infoOficina, setInfoOficina] = useState<InfoOficinaType | null>(null);
 
-    const handleSubmit = async (event: React.FormEvent) => {
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         try {
@@ -41,9 +48,9 @@ const Oficinas = () => {
                         type="text"
                         id="placa"
                         value={placa}
-                        onChange={(e) => setPlaca(e.target.value)}
+                        onChange={(e: ChangeEvent) => setPlaca(e.target?.value)}
                         placeholder="Ex: XYZ1234"
-                        maxLength="7"
+                        maxLength={7}
                         required
                     />
                 </div>
