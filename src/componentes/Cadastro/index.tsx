@@ -29,18 +29,44 @@ const Cadastro = () => {
         }));
     };
 
-    const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
+        // Verificar se todos os campos foram preenchidos
         if (Object.values(formData).some(value => value === '')) {
             alert('Preencha todos os campos obrigatórios.');
             return;
         }
 
+        // Gerar um token aleatório (se necessário)
         const token = gerarTokenAleatorio();
         console.log('Token gerado:', token);
 
-        exibirMensagemSucesso();
+        try {
+            // Enviar os dados para a API
+            const response = await fetch('https://sua-api.com/endpoint', { // Substitua com a URL da sua API
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`, // Exemplo de como adicionar um token de autorização, se necessário
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) {
+                throw new Error('Falha ao enviar os dados');
+            }
+
+            // Processar a resposta da API
+            const data = await response.json();
+            console.log('Resposta da API:', data);
+
+            // Exibir mensagem de sucesso
+            exibirMensagemSucesso();
+        } catch (error) {
+            console.error('Erro ao enviar dados:', error);
+            alert('Erro ao enviar os dados. Tente novamente.');
+        }
     };
 
     const gerarTokenAleatorio = () => {
