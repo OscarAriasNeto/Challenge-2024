@@ -22,14 +22,14 @@ const Cadastro = () => {
     });
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const { id, value } = event.target;
+        const { id, value } = event.currentTarget;
         setFormData(prevState => ({
             ...prevState,
             [id]: value
         }));
     };
 
-    const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    const handleFormSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         // Verificar se todos os campos foram preenchidos
