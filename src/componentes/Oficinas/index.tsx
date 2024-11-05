@@ -1,6 +1,4 @@
-"use client"
-
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './oficinas.module.css';
 
 const Oficinas = () => {
@@ -12,10 +10,11 @@ const Oficinas = () => {
         servico: string;
     }
 
+
     const [placa, setPlaca] = useState('');
     const [infoOficina, setInfoOficina] = useState<InfoOficinaType | null>(null);
 
-    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (event: any) => {
         event.preventDefault();
 
         try {
@@ -50,7 +49,7 @@ const Oficinas = () => {
                         type="text"
                         id="placa"
                         value={placa}
-                        onChange={(e: ChangeEvent) => setPlaca(e.target?.value)}
+                        onChange={(e: any) => setPlaca(e.target?.value)}
                         placeholder="Ex: XYZ1234"
                         maxLength={7}
                         required

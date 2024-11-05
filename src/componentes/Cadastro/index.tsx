@@ -29,26 +29,23 @@ const Cadastro = () => {
         }));
     };
 
-    const handleFormSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
+    const handleFormSubmit = async (event: any) => {
         event.preventDefault();
 
-        // Verificar se todos os campos foram preenchidos
         if (Object.values(formData).some(value => value === '')) {
             alert('Preencha todos os campos obrigatórios.');
             return;
         }
 
-        // Gerar um token aleatório (se necessário)
         const token = gerarTokenAleatorio();
         console.log('Token gerado:', token);
 
         try {
-            // Enviar os dados para a API
-            const response = await fetch('https://sua-api.com/endpoint', { // Substitua com a URL da sua API
+            const response = await fetch('https://sua-api.com/oficinas', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${token}`, // Exemplo de como adicionar um token de autorização, se necessário
+                    'Authorization': `Bearer ${token}`,
                 },
                 body: JSON.stringify(formData),
             });
@@ -57,11 +54,11 @@ const Cadastro = () => {
                 throw new Error('Falha ao enviar os dados');
             }
 
-            // Processar a resposta da API
+
             const data = await response.json();
             console.log('Resposta da API:', data);
 
-            // Exibir mensagem de sucesso
+
             exibirMensagemSucesso();
         } catch (error) {
             console.error('Erro ao enviar dados:', error);
