@@ -33,7 +33,7 @@ const Cadastro = () => {
         event.preventDefault();
 
         if (Object.values(formData).some(value => value === '')) {
-            alert('Preencha todos os campos obrigatórios.');
+            alert('Preencha todos os campos obrigatórios.,');
             return;
         }
 
