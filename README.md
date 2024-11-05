@@ -2,3 +2,4 @@ link figma: https://www.figma.com/file/uT7bZ6gdDM3vOM4B6ZJQJD/The-Clushers-Proto
 
 link github: https://github.com/OscarAriasNeto/Challenge-2024
 link vídeo : https://youtu.be/Bpy8jZuRYSo
+Link Vercel : https://challenge-2024-h7g9z5wtx-oscarariasnetos-projects.vercel.app/
